@@ -5,11 +5,9 @@
 // Javier Chung - 100785653
 // Andy Dai - 100726784
 
-
 #include "myshell.h"
 
 #define BUFFER_SIZE 1024
-
 
 // This method takes the statement and performs the specified command
 void execute_command(char* statement){
@@ -38,7 +36,6 @@ void execute_command(char* statement){
 			} else {
 				fprintf(stderr, "you need to added an argument. \n");
 			}
-		
 		}
 		//clear command
 		else if(strcmp(command, "clr") == 0){
@@ -78,12 +75,7 @@ void execute_command(char* statement){
 		//pause command
 		else if(strcmp(command, "pause") == 0){
 			pause_shell();
-			
 			token = ""; //resetting token after pausing
-		} else if(strcmp(command, "quit") == 0) {
-			printf("Thank you fo using our shell!");
-			return EXIT_SUCCESS;
-		}
 		else{
 			//execution of any commanands that are not internal
 			pid_t pid = fork();
@@ -133,8 +125,6 @@ int main(int argc, char* argv[]){
 			perror("could not open file");
 			return 1;
 		}
-		
-		
 		if (fp) {
 			//grabs each line and runs it from the batch file
 			while (fgets(statement, BUFFER_SIZE, fp) != NULL) {
@@ -148,7 +138,6 @@ int main(int argc, char* argv[]){
 		}
 		
 	}
-
 	//getting current working directory and saving it onto pwd	
 	getcwd(pwd, BUFFER_SIZE);
 	
