@@ -1,5 +1,6 @@
 ls
 pwd
+cd ..
 pwd
-pwd
-pwd
+ls
+quit
