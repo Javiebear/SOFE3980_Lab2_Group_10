@@ -94,14 +94,3 @@ void pause_shell(){
 	}
 	
 }
-
-//this method will display the user manual using more filter
-void help(){
-	
-		
-}
-
-
-
-
-
