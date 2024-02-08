@@ -12,10 +12,10 @@ This command will change the current directory to the specified <directory> dire
 	This command will list all the contents of the directory. It uses the DIR to open a directory path which is by default the one you are using else it will use the specified one. Then using the built in struct dirent, the code will take the directory files and print the contents within. 
 
 ### List Environment Variables Command: environ
-	This command will print out all environment strings.
+	This command will print out all environment strings. Using the built in environment variable environ that stores all global variables, it will iterate through the global array and print out its contents.
 
 ### Echo Command: echo <command>
-	This command will take the string inputted by the user and print it out onto the terminal. Using the built in environment variable environ that stores all global variables, it will iterate through the global array and print out its contents.
+	This command will take the string inputted by the user and print it out onto the terminal.
 
 ### Help Command: 
 	This command will display the user manual using the more filter.
