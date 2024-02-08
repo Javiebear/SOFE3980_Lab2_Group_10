@@ -1,8 +1,8 @@
 # SOFE3980_Lab2_Group_10
 
-# # Operations and Commands:
+## Operations and Commands:
 
-# # # Change Directory Command:  cd <directory>
+### Change Directory Command:  cd <directory>
 This command will change the current directory to the specified <directory> directory inputted by the user which is done by using the chdir(<directory>) command. If the user does not specify the directory, it will print the current working directory. If there is an incorrect directory specified, it will display an error. 
 
 # # # Clear Screen Command: clr
