@@ -138,9 +138,6 @@ int main(int argc, char* argv[]){
 		}
 		
 	}
-	//getting current working directory and saving it onto pwd	
-	getcwd(pwd, BUFFER_SIZE);
-	
 	//loop to constantly take user input
 	while((fgets(statement, BUFFER_SIZE, stdin) != NULL)){
 		
